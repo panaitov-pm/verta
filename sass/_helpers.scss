@@ -1,0 +1,58 @@
+/*---------------------------------------
+ PLACEHOLDER
+----------------------------------------- */
+// added ... if string is longer than field
+input[placeholder]          {text-overflow:ellipsis;}
+input::-moz-placeholder     {text-overflow:ellipsis;} 
+input:-ms-input-placeholder {text-overflow:ellipsis;}    
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+	color: #FFF;
+	font-weight: 300;
+	transition: color 0.4s ease-in-out;
+}
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+	color: #FFF;
+	font-weight: 300;
+	transition: color 0.4s ease-in-out;
+}
+input:-ms-input-placeholder {
+	color: #FFF;
+	font-weight: 300;
+	transition: color 0.4s ease-in-out;
+}
+input::-ms-input-placeholder {
+	color: #FFF;
+	font-weight: 300;
+	transition: color 0.4s ease-in-out;
+}
+
+//Remove placeholder on field focus
+input:focus::-webkit-input-placeholder {color: transparent;}
+input:focus::-moz-placeholder          {color: transparent;}
+input:focus:-ms-input-placeholder      {color: transparent;}
+
+textarea:focus::-webkit-input-placeholder {color: transparent;}
+textarea:focus::-moz-placeholder          {color: transparent;}
+textarea:focus:-ms-input-placeholder      {color: transparent;}
+
+input:focus,
+textarea:focus {outline: 0;}
+
+.df-v-center {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+}
+
+.v-align:before {
+	content: '';
+	height: 100%;
+	display: inline-block;
+	vertical-align: middle;
+}
